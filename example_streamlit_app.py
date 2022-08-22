@@ -6,33 +6,6 @@ Created on Tue Aug  2 12:37:45 2022
 @author: hugo_arellano
 """
 
-# import streamlit as st
-# import numpy as np
-# import matplotlib.pyplot as plt
-# binom_dist = np.random.binomial(1, .5, 1000)
-
-# list_of_means = []
-# for i in range(0, 1000):
-#     list_of_means.append(np.random.choice(binom_dist, 100, replace=True).mean())
-
-# fig, ax = plt.subplots()
-# ax = plt.hist(list_of_means)
-# st.pyplot(fig)
-
-
-# import streamlit as st
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# import seaborn as sns
-
-# st.title("EDA - Tax Competition In Mexico")
-# #import our data
-# my_dataset = pd.read_csv('/home/hugo_arellano/Carlo/portfolio/panel_data.csv')
-# st.markdown('Explore the hole panel data')
-# st.write(my_dataset)
-
-
-# A genaralistic explore app
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -141,44 +114,6 @@ st.subheader('')
 
     
 
- 
-# st.subheader('Lineplot of main state variables by year')
-
-# selected_state = st.selectbox('What state would you like to explore?',
-#                               df['ent_name'].unique())
-# #x_var = st.selectbox('Select the variable X',
-# #                     df.loc[:, df.columns != 'unique'].columns)
-
-# y_var = st.selectbox('Select the comparison variable',
-#                      ['isn_tasa','isn','base_gravable_formal','tasa_efec_combinada','deuda_ent',
-#                       'pob_ocup','impuestos_ent','ing_formal','pct_pob_formal','pct_pob_informal',
-#                       'ing_informal','pct_gobierno','pct_grandes',
-#                       'pct_medianos','pct_micronegocios','pct_otros','pct_pequeños']
-#                          )
-# # if y_var == 'isn_tasa':
-# #     st.write('This variable shows the rate of payroll tax established by goverment')
-    
-# # if y_var == 'isn':
-# #     st.write('This variable shows the revenue for payroll tax')
-    
-# # if y_var == 'base_gravable_formal':
-# #     st.write('This variable shows the total revenue  ')
-
-
-# df = df[df['ent_name']==selected_state]
-# #Plotting
-# fig, ax = plt.subplots()
-# ax = sns.lineplot(x=df['anio'],
-#                   y=df[y_var])
-
-# plt.xlabel('anio')
-# plt.ylabel(y_var)
-# plt.title('{} '.format(selected_state))
-# st.pyplot(fig)
-
-# # Next step, plotting 
-
-# st.subheader('Plotting isn nominal vs isn efective') 
     
 
 
